@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .heroButton {
+    @apply px-6 py-2  bg-[#341948]/60 drop-shadow-lg rounded-full uppercase text-gray-50/60   hover:bg-[#341948] hover:text-white text-sm m-1 transition-transform transform hover:scale-110 hover:border hover:border-white;
+  }
+  .contactInput {
+    @apply outline-none bg-slate-400/10 focus:text-white rounded-sm border-b px-6 py-1 border-[#242424] text-gray-50 placeholder-[#9388A2]/40 transition-all placeholder:font-normal focus:border-gray-50 z-20  hover:border-gray-50  font-semibold max-w-screen-md text-base;
+  }
+
+  .arrowIcons {
+    @apply cursor-pointer h-10 w-10 drop-shadow-lg bg-white rounded-full;
+  }
+  .skillIcons {
+    @apply m-1 drop-shadow-lg object-cover w-10 h-10 transition duration-300 ease-in-out z-30;
+  }
+  .getStartedButton {
+    @apply flex  items-center justify-center bg-[#8155BA]/20 rounded-full p-2   w-48 h-14  hover:border-2 hover:border-white  hover:bg-[#8155BA] hover:text-white  font-bold text-white drop-shadow-lg transition-all duration-200 ease-out cursor-pointer text-lg  text-center align-middle z-50 grow;
+  }
+  .skillText {
+    @apply invisible md:visible;
+  }
+  .webButton {
+    @apply flex items-center justify-center text-gray-50/60  bg-[#341948]/60 hover:bg-[#341948] hover:text-gray-50 rounded-full transition-transform grow w-36 drop-shadow-2xl;
+  }
+  .popoverContainer {
+    @apply flex justify-center items-center flex-col text-sm font-semibold;
+  }
+  .popoverElement {
+    @apply bg-[#341948] drop-shadow-lg rounded-full p-1 transition ease-in-out delay-100 cursor-pointer hover:-translate-y-1 hover:scale-110 text-white hover:text-[#341948] hover:bg-white hover:border hover:border-[#341948];
+  }
+  .popoverIcon {
+    @apply h-10 w-10 m-2;
+  }
+  .popoverTitle {
+    @apply text-[#341948] text-sm font-normal;
+  }
+
+  .popoverText {
+    @apply p-2 text-sm  text-white bg-[#341948] text-center;
+  }
+  .frontEndCarosel {
+    @apply cursor-grab overflow-hidden items-center justify-center flex    h-full w-full p-2 max-w-lg  bg-gray-50/30 md:h-96 md:m-4  rounded-lg backdrop-blur-xl drop-shadow-2xl;
+  }
+  .frontEndInnerCarosel {
+    @apply md:h-96 w-screen p-2 flex-row flex;
+  }
+  .frontEndImage {
+    @apply cursor-grab pointer-events-none h-56 md:h-80  min-w-fit drop-shadow-2xl;
+  }
+  .frontEndItem {
+    @apply flex  items-center h-full   justify-center min-w-full;
+  }
+  .interactiveGrid {
+    @apply p-4 max-w-screen-2xl grid gap-4;
+  }
+  .title {
+    @apply text-4xl  md:text-6xl  font-bold uppercase;
+  }
+  .section {
+    @apply h-60 w-screen flex justify-center items-center md:w-1/2 md:h-1/3;
+  }
+  .getAppButton {
+    @apply flex flex-row items-center justify-center bg-[#274472] rounded-full p-2 m-1  w-28 h-10 border-2 border-white  hover:bg-[#3D5D7A] hover:text-white  font-bold text-white drop-shadow-lg transition-all duration-200 ease-out cursor-pointer text-xl text-center align-middle;
+  }
+  .listingImageContainer {
+    @apply flex flex-col items-center justify-center  rounded-full p-2 m-1 w-40 h-40 object-cover drop-shadow-lg;
+  }
+  .dateContainer {
+    @apply flex flex-col justify-center;
+  }
+  .tagImageContainer {
+    @apply flex flex-col items-center justify-center m-2 w-8 h-8 object-cover drop-shadow-lg;
+  }
+  .shadowContainer {
+    @apply items-center flex flex-col border-2 border-white m-2 rounded-lg drop-shadow-lg bg-white text-[#274472] text-center font-bold text-xl max-w-screen-sm w-full;
+  }
+  .mapContainer {
+    @apply max-w-screen-sm w-full h-96 items-center justify-center flex;
+  }
+  .quantitySelection {
+    @apply m-2 cursor-pointer flex flex-row items-center justify-center;
+  }
+  .eventPurchaseText {
+    @apply flex flex-col items-center justify-center bg-[#028A0F] rounded-full p-2 m-2  w-28 h-28 border-2 border-white  hover:bg-[#75c07c] hover:text-white  text-white drop-shadow-lg transition-all duration-200 ease-out cursor-pointer font-normal text-xl text-center align-middle;
+  }
+  .getAppText {
+    @apply flex flex-col items-center justify-center bg-[#028A0F] rounded-full p-2   w-28 h-28 border-2 border-white  hover:bg-[#75c07c] hover:text-white  text-white drop-shadow-lg transition-all duration-200 ease-out cursor-pointer text-lg text-center align-middle;
+  }
+  .continueText {
+    @apply flex flex-col items-center justify-center bg-[#274472] rounded-full p-2 m-2  w-28 h-28 border-2 border-white  hover:bg-[#5885AF] hover:text-white   text-white drop-shadow-lg transition-all duration-200 ease-out cursor-pointer text-lg text-center  align-middle;
+  }
+  .cardContainer {
+    @apply max-w-screen-sm w-full p-5 flex flex-col items-center justify-center;
+  }
+  .loadingButton {
+    @apply flex flex-row items-center justify-center bg-[#E0E0E0] rounded-full p-2 m-3  w-28 h-10 border-2 border-white   font-medium text-[#B1B1B1]  drop-shadow-lg  text-xl text-center align-middle;
+  }
+  .cartContainer {
+    @apply items-center flex flex-col  m-2 text-[#274472] text-left  max-w-screen-sm w-full;
+  }
+  .detailsContainer {
+    @apply items-center flex flex-col border-2 border-white m-2 rounded-lg drop-shadow-lg bg-white text-[#274472] text-center font-bold text-xl max-w-screen-sm w-full  justify-center  self-center  justify-items-center;
+  }
+  .processingText {
+    @apply flex flex-col items-center justify-center rounded-full p-2 m-2  w-28 h-28 border-2 border-white font-bold text-[#B1B1B1] drop-shadow-lg   text-xl text-center align-middle bg-[#E0E0E0];
+  }
+  .navigationButton {
+    @apply flex flex-row items-center justify-center bg-[#274472] hover:bg-[#3D5D7A] rounded-full p-2 m-2  w-36 h-10 border-2 border-white  text-xs font-medium text-white drop-shadow-lg   text-center align-middle cursor-pointer animate-bounce;
+  }
+  .loaderImageContainer {
+    @apply flex flex-col items-center justify-center  w-40 h-40 object-cover absolute;
+  }
+  .ticketContainer {
+    @apply border-2 border-white m-2 rounded-lg drop-shadow-lg bg-white text-[#274472] text-center font-bold text-xl max-w-screen-sm w-full flex flex-col items-center justify-center;
+  }
+  .ticketDetailsSection {
+    @apply border-2 border-white m-2 rounded-lg drop-shadow-lg bg-white text-[#274472] text-center font-bold text-xl max-w-screen-sm w-full flex flex-col items-center justify-center divide-y divide-[#3D5D7A];
+  }
+  .ticketDetailsContainer {
+    @apply flex flex-col  items-start justify-start self-stretch p-1;
+  }
+  .continueLoadingText {
+    @apply flex flex-col items-center justify-center  rounded-full p-2 m-2  w-28 h-28 border-2 border-white  font-bold bg-[#E0E0E0] drop-shadow-lg  text-lg text-center text-[#B1B1B1] align-middle;
+  }
+  .iconContainer {
+    @apply flex items-center justify-center flex-col m-2;
+  }
+  .iconSize {
+    @apply h-6 w-6;
+  }
+  .headerImageContainer {
+    @apply flex  items-center flex-1  justify-start w-36 p-2 m-1 h-20 object-contain;
+  }
+  .formContainer {
+    @apply flex flex-col items-center  bg-white max-w-screen-sm w-full justify-center justify-items-center drop-shadow-lg rounded-lg p-4;
+  }
+}

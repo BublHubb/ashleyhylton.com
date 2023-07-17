@@ -1,0 +1,46 @@
+{
+  "name": "ashleyhylton-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@heroicons/react": "^2.0.18",
+    "@mui/material": "^5.13.7",
+    "@react-google-maps/api": "^2.19.0",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/vision": "^3.14.1",
+    "@sendgrid/client": "^7.7.0",
+    "@sendgrid/mail": "^7.7.0",
+    "@types/node": "20.3.3",
+    "@types/react": "18.2.14",
+    "@types/react-dom": "18.2.6",
+    "autoprefixer": "10.4.14",
+    "firebase": "^9.23.0",
+    "framer-motion": "^10.12.18",
+    "lottie-react": "^2.4.0",
+    "next": "13.4.8",
+    "next-sanity": "^5.1.0",
+    "postcss": "8.4.24",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.45.1",
+    "react-icons": "^4.10.1",
+    "react-simple-typewriter": "^5.0.1",
+    "react-social-icons": "^5.15.0",
+    "react-stripe-js": "^1.1.5",
+    "reactfire": "^4.2.3",
+    "sanity": "^3.14.1",
+    "tailwindcss": "3.3.2",
+    "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "tailwind-scrollbar": "^3.0.4"
+  }
+}
