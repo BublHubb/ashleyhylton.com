@@ -10,7 +10,7 @@ type Props = {};
 
 export const SkillsExport = (props: Props) => {
   return (
-    <div className="grid grid-cols-3 md:grid-cols-4 md:gap-5 justify-between z-20  text-[#341948] bg-gray-50/30 rounded-2xl backdrop-blur-2xl p-2">
+    <div className="grid grid-cols-3 md:grid-cols-4 md:gap-5 justify-between z-20  text-[#341948] bg-gray-50/30 rounded-2xl backdrop-blur-2xl p-2 invisible md:visible">
       <div className="justify-center items-center flex flex-col">
         <RiJavascriptFill className="skillIcons" />
         <p className="skillText">Javascript</p>

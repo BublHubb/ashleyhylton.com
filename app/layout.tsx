@@ -1,10 +1,5 @@
-"use client";
-
 import "./globals.css";
 import { Titillium_Web } from "next/font/google";
-import { FirebaseProvider } from "@/firebase/FirebaseContext";
-import { FirebaseAppProvider } from "reactfire";
-import { firebaseConfig } from "@/firebase/init";
 
 const titillium_Web = Titillium_Web({
   weight: ["400", "900"],
@@ -24,11 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* <FirebaseAppProvider firebaseConfig={firebaseConfig}>
-        <FirebaseProvider> */}
       <body className={titillium_Web.className}>{children}</body>
-      {/* </FirebaseProvider>
-      </FirebaseAppProvider> */}
     </html>
   );
 }

@@ -102,23 +102,6 @@ function EventListing() {
   };
 
   const getEvent = async (): Promise<void> => {
-    // try {
-    //   const documentRef = doc(db, "events", "0pGzZJHScejRLZo4WhHn");
-    //   const snapshot = await getDoc(documentRef);
-    //   if (snapshot.exists()) {
-    //     console.log("Document:", snapshot.data());
-    //     setEventDetails(id: docsnapshot.data());
-    //     setDataReady(true);
-    //   } else {
-    //     console.log("Document does not exist!");
-    //     setDataReady(true);
-    //     setNoEventFound(true);
-    //   }
-    // } catch (error) {
-    //   console.error("Error fetching document:", error);
-    //   setDataReady(true);
-    //   setNoEventFound(true);
-    // }
     const colRef = collection(db, "events");
     const q = query(colRef, where("eventref", "==", "demoevent"));
     const querySnapshot = await getDocs(q);
@@ -425,10 +408,11 @@ function EventListing() {
                         />
                       </div>
                     ) : null}
+                    <p>Try buying a ticket for the event below!</p>
                     {images ? (
                       <div
                         className="max-w-screen-sm h-96
-         w-full m-auto py-16 px-4 relative group justify-center "
+         w-full m-auto py-16 px-4 relative group justify-start items-center  "
                       >
                         <div className="iconContainer">
                           <PhotoIcon className="iconSize " />
@@ -438,7 +422,7 @@ function EventListing() {
                           style={{
                             backgroundImage: `url(${images[currentIndex]})`,
                           }}
-                          className="max-w-screen-sm h-full rounded-2xl bg-center bg-contain duration-500 items-center bg-no-repeat"
+                          className="max-w-screen-sm h-full  rounded-2xl bg-center bg-contain duration-500 items-center bg-no-repeat"
                         ></div>
 
                         <div

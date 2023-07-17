@@ -45,7 +45,7 @@ function Header() {
         </div>
         <div
           onClick={() => {
-            window.open("https://www.google.com/");
+            window.open("https://github.com/BublHubb/ashleyhylton.com");
           }}
           className="cursor-pointer bg-gray-50/20 rounded-full backdrop-blur-2xl drop-shadow-2xl m-1"
         >
@@ -74,33 +74,33 @@ function Header() {
       >
         <Link href="#hero">
           <div className="cursor-pointer bg-gray-50/20 p-1 rounded-full backdrop-blur-2xl drop-shadow-2xl  m-1">
-            <HomeIcon className="cursor-pointer h-7 w-7 m-1  " />
+            <HomeIcon className="cursor-pointer h-5 w-5 m-1  " />
           </div>
         </Link>
 
         <Link href="#features">
           <div className="cursor-pointer bg-gray-50/20 p-1 rounded-full backdrop-blur-2xl drop-shadow-2xl  m-1">
-            <StarIcon className="cursor-pointer h-7 w-7 m-1" />{" "}
+            <StarIcon className="cursor-pointer h-5 w-5 m-1" />{" "}
           </div>
         </Link>
         <Link href="#frontend">
           <div className="cursor-pointer bg-gray-50/20 p-1 rounded-full backdrop-blur-2xl drop-shadow-2xl  m-1">
-            <PaintBrushIcon className="cursor-pointer h-7 w-7 m-1" />{" "}
+            <PaintBrushIcon className="cursor-pointer h-5 w-5 m-1" />{" "}
           </div>
         </Link>
         <Link href="#backend">
           <div className="cursor-pointer bg-gray-50/20 p-1 rounded-full backdrop-blur-2xl drop-shadow-2xl  m-1">
-            <Cog6ToothIcon className="cursor-pointer h-7 w-7 m-1" />
+            <Cog6ToothIcon className="cursor-pointer h-5 w-5 m-1" />
           </div>
         </Link>
         <Link href="#whyme">
           <div className="cursor-pointer bg-gray-50/20 p-1 rounded-full backdrop-blur-2xl drop-shadow-2xl  m-1">
-            <UserCircleIcon className="cursor-pointer h-7 w-7 m-1 " />
+            <UserCircleIcon className="cursor-pointer h-5 w-5 m-1 " />
           </div>
         </Link>
         <Link href="#contact">
           <div className="cursor-pointer bg-gray-50/20 p-1 m-1 rounded-full backdrop-blur-2xl drop-shadow-2xl">
-            <EnvelopeIcon className="cursor-pointer h-7 w-7 m-1 " />
+            <EnvelopeIcon className="cursor-pointer h-5 w-5 m-1 " />
           </div>
         </Link>
         <Link href="#contact">
